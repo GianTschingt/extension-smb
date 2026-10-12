@@ -8,6 +8,10 @@
   <description>Implementation of the SMB/CIFS resource provider for Lucee using jcifs-ng</description>
   <url>http://maven.lucee.org/smb</url>
 
+  <properties>
+    <bouncycastle.version>1.84</bouncycastle.version>
+  </properties>
+
   <licenses>
     <license>
       <name>The GNU Lesser General Public License, Version 2.1</name>
@@ -181,7 +185,7 @@
     <dependency>
       <groupId>org.bouncycastle</groupId>
       <artifactId>bcprov-jdk18on</artifactId>
-      <version>1.80</version>
+      <version>${bouncycastle.version}</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
